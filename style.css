@@ -1,11 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+  
+}
+body {
     font-family: sans-serif;
 }
 html {
     scroll-behavior:smooth;
+}
+#land {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://wallpapercave.com/wp/wp7524684.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#land .h1-1 {
+    font-family: "Berkshire Swash", serif;
+    position: absolute;
+    top: 25%;
+    right: 20%;
+    font-size: 60px;
+    line-height: 100px;
+    animation: big 3s linear 1;
+}
+@keyframes big {
+   from {
+    transform: translateX(150px);
+    opacity: 0;
+   }
+   to {
+    transform:translate3d(-150px);
+    opacity: 1;
+   }
 }
 
 .collapse ul li a::after{
@@ -31,8 +64,14 @@ html {
     background-color: #ffffff;
     border-radius: 20px;
 }
+#sec1 .img-2 {
+    left: 22%;
+}
 #sec1 .img-1 {
-    animation: rotate 20s linear infinite;
+    z-index: 2;
+    left: -18%;
+    border-radius: 30%;
+    animation: otate 20s linear infinite;
 }
 @keyframes rotate {
     from{
@@ -53,11 +92,168 @@ html {
     line-height: 30px;
     font-size: 20px;
     text-align: justify;
+    background-color: #fac031;
+    padding: 2%;
+    border-radius: 5px;
+}
+#sec1 .h1-2 {
+    padding-top: 2%;
+    font-size: 30px;
+    font-style: italic;
+    font-family: "Berkshire Swash", serif;
+    letter-spacing: 5px;
+}
+/* @media screen and (max-width:340px){
+    #land {
+        top: 100px;
+        width: 100%;
+        height: 60vh;
+        background-image: url("https://cdn.wallpapersafari.com/70/33/exuXCo.jpg");
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    #land .h1-1 {
+        top: 15%;
+        left: 2%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #sec1 {
+        top: 10px;
+    }
+    #sec1 .h1-2 {
+        padding-top: 2%;
+        font-size: 18px;
+        padding-bottom: 5%;
+    }
+    #sec1 p {
+        line-height: 25px;
+        font-size: 15px;
+    }
+    #sec1 .h1-3 {
+        font-size: 16px;
+    }
+    #About {
+        top: 10px;
+        left: 5%;
+       line-height: 25px;
+    }
+    #About .h1-3 {
+        font-size: 16px;
+    }
+    #About p {
+        font-size: 15px;
+        text-indent: 3%;
+    }
+} */
+@media screen and (max-width:576px){
+    #sec1 .h1-2 {
+        font-size: 20px;
+    }
+    #sec1 p {
+        line-height: 30px;
+        font-size: 15px;
+    }
+    #land {
+        top: 100px;
+        width: 100%;
+        height: 40vh;
+        background-image: url("https://cdn.wallpapersafari.com/70/33/exuXCo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #land .h1-1 {
+        top: 20%;
+        left: 2%;
+        font-size: 30px;
+        line-height: 40px;
+    }
+    #sec1 .h1-3 {
+        font-size: 20px;
+    }
+    #About .h1-3 {
+        font-size: 10px;
+    }
+    #About h3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+    #About p {
+        line-height: 30px;
+        font-size: 15px;
+        text-indent: 3%;
+    }
+}
+@media screen and (min-width:577px) and (max-width:768px){
+    #land {
+        top: 100px;
+        width: 100%;
+        height: 70vh;
+        background-image: url("https://cdn.wallpapersafari.com/70/33/exuXCo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #land .h1-1 {
+        font-family: "Berkshire Swash", serif;
+        position: absolute;
+        top: 30%;
+       left: 2%;
+        font-size: 40px;
+        line-height: 60px;
+        animation: big 3s linear 1;
+    }
+    #sec1 .h1-3 {
+        font-size: 20px;
+    }
+    #sec1 p {
+        line-height: 30px;
+        font-size: 16px;
+    }
+    #About .h1-3 {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}
+@media screen and (min-width:769px) and (max-width:992px){
+    #land {
+        position: relative;
+        top: 100px;
+        width: 100%;
+        height: 90vh;
+        background-image: url("https://cdn.wallpapersafari.com/70/33/exuXCo.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    #land .h1-1 {
+        font-family: "Berkshire Swash", serif;
+        position: absolute;
+        top: 30%;
+       left: 2%;
+        font-size: 45px;
+        line-height: 60px;
+        animation: big 3s linear 1;
+    }
+    #sec1 .h1-3 {
+        font-size: 27px;
+    }
+    #About .h1-3 {
+        font-size: 25px;
+    }
+}
+@media screen and (min-width:993px) and (max-width:1200px){
+    #sec1 .h1-3 {
+        font-size: 27px;
+    }
+    #About .h1-3 {
+        font-size: 25px;
+    }
 }
 #About {
     width: 90%;
     height: fit-content;
-    background-color: #ffffff;
+    background-image: url('https://tse4.mm.bing.net/th?id=OIP.F7o5uq_ijMarW2OGDKgvcgHaEK&pid=Api&P=0&h=180');
+    color: white;
+    background-size: cover;
     position: relative;
     top: 170px;
     left: 5%;
@@ -71,6 +267,14 @@ html {
 #About p {
     font-size: 18px;
     text-indent: 3%;
+}
+#About .h1-3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+#About h3 {
+    font-size: 20px;
+    font-weight: bold;
 }
 #Menu {
     width: 90%;
@@ -111,7 +315,17 @@ html {
     height: fit-content;
     position: relative;
     top: 250px;
-    background-color: #ffffff;
+   background-image: url('https://png.pngtree.com/thumb_back/fw800/back_our/20190619/ourmid/pngtree-simple-style-western-restaurant-menu-poster-background-image_136952.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
+}
+#Review .container {
+    backdrop-filter: blur(5px);
+}
+#Review .card {
+    background-color: #000000;
+    color: #ffffff;
+    height: fit-content;
 }
 #Review .card:hover {
     transform: scale(0.9);
@@ -130,11 +344,19 @@ html {
     height: fit-content;
     position: relative;
     top: 350px;
-    background-color: #ffffff;
+    /* background-color: goldenrod; */
+    background-image: url('https://t3.ftcdn.net/jpg/02/44/98/50/360_F_244985001_JkE2leAeXd0h91yOOXrq2Gfl7OKOg0qp.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 #Chefs .card {
     margin-bottom: 3%;
     box-shadow: 5px 3px 5px;
+    background-color:#ffffff68;
+    backdrop-filter: blur(0px);
+}
+#Chefs .list-group-item {
+    background-color: #ffffff68;
 }
 #Chefs .card img {
     transition: 0.5s linear;
@@ -149,7 +371,7 @@ html {
     height: 120vh;
     position: relative;
     top: 450px;
-    background-color: #ffffff;
+
     background-image: url('images/table.booking.jpg');
     background-size: cover;
 }
@@ -169,7 +391,7 @@ html {
      height: fit-content;
      position: relative;
      top: 500px;
-     background: #000000ca;
+     background: #000000c9;
      padding-bottom: 3%;
 }
 #contact a {
@@ -222,3 +444,12 @@ html {
 ::-webkit-scrollbar-thumb {
     background: linear-gradient(#ff0000,#0000ff,#08fd08);
 }
+/* .reveal {
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.reveal .active {
+    transform: translateY(0px);
+    opacity: 1;
+} */
