@@ -117,6 +117,24 @@ nav .h1-logo {
 }
 
 @media screen and (min-width:340px) and (max-width:576px){
+    #land .h1-1 {
+        top: 20%;
+        left: 2%;
+        font-size: 30px;
+        line-height: 40px;
+        animation: big 3s linear 1;
+    }
+    @keyframes big {
+       from {
+        transform: translateX(50px);
+        opacity: 0;
+       }
+       to {
+        transform:translate3d(-50px);
+        opacity: 1;
+       }
+    }
+    
     .collapse ul li a::after{
         display: none;
     }
@@ -135,12 +153,6 @@ nav .h1-logo {
         background-image: url("https://cdn.wallpapersafari.com/70/33/exuXCo.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-    }
-    #land .h1-1 {
-        top: 20%;
-        left: 2%;
-        font-size: 30px;
-        line-height: 40px;
     }
     #About h3 {
         font-size: 20px;
