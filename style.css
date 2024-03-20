@@ -126,11 +126,11 @@ nav .h1-logo {
     }
     @keyframes big {
        from {
-        transform: translateX(50px);
+        transform: translateX(30px);
         opacity: 0;
        }
        to {
-        transform:translate3d(-50px);
+        transform:translate3d(-30px);
         opacity: 1;
        }
     }
